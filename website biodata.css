@@ -1,0 +1,14 @@
+/* Styling for menu item */
+.menu-item {
+    background-color: maroon;
+    color: bisque; /* Font color */
+    padding: 10px;
+    display: inline-block; /* Ensures the background covers the link */
+    text-decoration: none; /* Remove default link underline */
+  }
+
+  /* Hover effect for the menu item */
+.menu-item:hover {
+    background-color: bisque;
+    color: maroon; /* Font color change on hover */
+  }

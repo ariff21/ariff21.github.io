@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="website biodata.js"> 
+</script>
+<title>Index Page</title>
+    <!-- fade in effect -->
+    <style>
+        /* Styling for fade-in effect */
+        .fade-in {
+            opacity: 0; 
+            animation: fadeInAnimation 1s ease-in forwards;
+        }
+
+        @keyframes fadeInAnimation {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+    <div class="fade-in">
+</head>
+
+    <body>
+        <div style="background-color: #521212">
+    
+        <br>
+        
+ <!-- clock -->
+    <div id="clock" style="color: beige;"></div> 
+        <script>
+            function updateClock() {
+                const now = new Date();
+                const hours = now.getHours().toString().padStart(2, '0');
+                const minutes = now.getMinutes().toString().padStart(2, '0');
+                const seconds = now.getSeconds().toString().padStart(2, '0');
+                const timeString = `${hours}:${minutes}:${seconds}`;
+                document.getElementById('clock').textContent = timeString;
+
+            }
+            setInterval(updateClock, 1000);
+            updateClock();
+        </script>
+<section>
+    <style>
+        /* link underline removed */
+        a {
+          text-decoration: none;
+        }
+      </style>
+
+<!-- Home button-->
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p style="background-color: rgb(0, 119, 128); padding: 10px; display: inline-block; text-decoration: none; width: 50px; height: 20px; text-align: center;">
+    <a href="#"><font color="bisque">Home</font></a></p>
+    <!-- jarak &nbsp -->
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<!-- Biodata button -->
+<p style="background-color: maroon; color: seagreen; padding: 10px; display: inline-block; text-decoration: none; width: 150px; height: 20px; text-align: center;" 
+onmouseover="this.style.backgroundColor='rgb(0, 119, 128)'; this.style.color='maroon';" 
+onmouseout="this.style.backgroundColor='maroon'; this.style.color='bisque';">
+  <a href="More info biodata.html"><font color="White">Biodata</font></a></p>
+       
+<!-- Birth button -->
+<p style="background-color: maroon; color: seagreen; padding: 10px; display: inline-block; text-decoration: none; width: 150px; height: 20px; text-align: center;" 
+onmouseover="this.style.backgroundColor='rgb(0, 119, 128)'; this.style.color='maroon';" 
+onmouseout="this.style.backgroundColor='maroon'; this.style.color='bisque';">
+  <a href="More info birth.html"><font color="White">Birth</font></a></p>
+
+<!-- Education history button -->
+    <p style="background-color: maroon; padding: 10px; display: inline-block; text-decoration: none; width: 150px; height: 20px; text-align: center;" 
+  onmouseover="this.style.backgroundColor='rgb(0, 119, 128)'; this.style.color='maroon';" 
+  onmouseout="this.style.backgroundColor='maroon'; this.style.color='bisque';">
+    <a href="More info education.html"><font color="White">Education History</font></a></p>
+
+<!-- Work experiences -->
+    <p style="background-color: maroon; color: seagreen; padding: 10px; display: inline-block; text-decoration: none; width: 150px; height: 20px; text-align: center;" 
+  onmouseover="this.style.backgroundColor='rgb(0, 119, 128)'; this.style.color='maroon';" 
+  onmouseout="this.style.backgroundColor='maroon'; this.style.color='bisque';">
+    <a href="More info work.html"><font color="White">Work Experiences</font></a></p>
+
+<!-- Gallery -->
+    <p style="background-color: maroon; color: seagreen; padding: 10px; display: inline-block; text-decoration: none; width: 150px; height: 20px; text-align: center;" 
+  onmouseover="this.style.backgroundColor='rgb(0, 119, 128)'; this.style.color='maroon';" 
+  onmouseout="this.style.backgroundColor='maroon'; this.style.color='bisque';">
+    <a href="Gallery.html"><font color="White">Gallery</font></a></p>
+</section>
+<!-- title my portfolio -->
+<h1 align="center">
+    <font face="Lato" color="bisque" size="7">My Portfolio</font>
+</h1>
+
+<style>
+    /* css for the slider */
+    .slider {
+        max-width: 300px;
+        max-height: 300px;
+        position: relative;
+        margin: auto;
+        overflow: hidden;
+        border: 1px solid #ccc;
+    }
+
+    .slides {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .slide {
+        min-width: 100%;
+    }
+
+    .slide img {
+            width: 100%; /* Ensure the image fills its container width */
+            height: auto;
+    }
+</style>
+
+<div class="slider">
+    <div class="slides">
+        <div class="slide"><img src="raya.jpg" alt="Image 1"></div>
+        <div class="slide"><img src="event 2.jpg" alt="Image 2"></div>
+        <div class="slide"><img src="genting pic.jpg" alt="Image 3"></div>
+        <div class="slide"><img src="NAM visit.jpg" alt="Image 3"></div>
+        <div class="slide"><img src="SULAM SISBOM Sem 3.jpg" alt="Image 3"></div>
+        <div class="slide"><img src="Event 314 Pic.jpg" alt="Image 3"></div>
+        <div class="slide"><img src="raya ppas.jpg" alt="Image 3"></div>
+        <div class="slide"><img src="eid pic 2.jpg" alt="Image 3"></div>
+    </div>
+</div>
+
+<script>
+    // js for auto-sliding
+    const slider = document.querySelector('.slider');
+    const slides = document.querySelectorAll('.slide');
+    let currentIndex = 0;
+
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        const translateValue = -currentIndex * 100 + '%';
+        slider.querySelector('.slides').style.transform = `translateX(${translateValue})`;
+    }
+
+    setInterval(nextSlide, 3000); // Change slide every 3 seconds
+</script>
+
+<!-- css for play/pause button -->
+<section>
+    <style>      
+        audio {
+            width: 110%;
+            max-width: 410px;
+            margin: 21px 0;
+        }
+
+        button {
+            background-color: rgb(0, 119, 128);
+            color: bisque;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: rgb(1, 223, 248);
+        }
+    </style>
+<div><center>
+<audio controls autoplay muted>
+    <source src="inside you audio.mp3" type="audio/mp3">
+</audio>
+<br>
+    <button onclick="playPause()">Play/Pause</button>
+<!-- js for audio button -->
+    <script>
+        var audio = document.querySelector('audio');
+
+        function playPause() {
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+    </script>
+
+        </center>
+        </div>
+        </section>
+        <br>
+        
+        <hr>
+        <!-- read first -->
+        
+        &nbsp;&nbsp;&nbsp;<p style="background-color: rgb(0, 119, 128); padding: 10px; display: inline-block; text-decoration: none; width: 70px; height: 20px; text-align: center;"
+            onmouseover="this.style.backgroundColor='rgb(0, 119, 128)'; this.style.color='maroon';" 
+            onmouseout="this.style.backgroundColor='maroon'; this.style.color='bisque';">
+                <a href="Read first.html"><font color="white">Read First</font></a></p>
+        
+      </head>
+        <!-- Direct menu -->
+        <style>
+            ul {
+                list-style-type: square;
+                padding: 10;
+            }
+            
+            li {
+                margin-bottom: 5px;
+                display:list-item
+            }
+        
+            li a {
+                text-decoration: none;
+                color: aqua;
+            }
+
+            li a:hover {
+            color: rgb(0, 119, 128);
+            }
+            </style>
+
+        <body>
+         <h2><p style="color: rgb(255, 255, 255);">Direct Menu:</p></h2>
+
+        <ul>
+            <li><a href="#Biodata">Start</a></li>
+            <li><a href="#Birth">Birth</a></li>
+            <li><a href="#Education History">Education History</a></li>
+            <li><a href="#Work Experiences">Work Experiences</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="Acknowledgement.html">Acknowledgement</a></li>
+        </ul>
+
+        </body>
+
+        <center>
+        <img src="Scroll.gif">
+        </center>
+        <br>
+        <br>
+        <br>
+    <hr>
+        <center>
+    
+    <style>
+        img {
+            border-color:antiquewhite;
+        }
+
+        p {
+            color: dodgerblue;
+        }
+
+        
+    </style>
+
+        <h1><div id="Biodata" style="color: blanchedalmond;">Biodata</h1>
+        
+    <img src="Arip.jpg" width="200" height="275" border="2.5">
+
+    <div>
+        <p>Ariff Azri bin Zaharrudin</p>
+        <p>20 Years old</p>
+        <p>Male</p>
+        <p><b>Contact:</b></p>
+        <p><a href="tel:+011 6082-5548" style="color: aqua;">011 6082-5548</a></p>
+        <p><a href="mailto:ariffazri21@gmail.com" style="color: aqua;">ariffazri21@gmail.com</a></p>
+        <p><a href="More info biodata.html" style="color: azure;">More info</a></p>
+    </div>
+    <hr>
+    <div>
+        <h1><div id="Birth" style="color: blanchedalmond;">Birth</h1>
+        <p>Born in 21 March 2003</p>
+        <p>At Hospital Putrajaya</p>
+        <p><a href="More info birth.html" style="color: azure;">More info</a></p>
+    </div>
+    <hr>
+    <div>
+        <h1><div id="Education History" style="color: blanchedalmond;">Education History</h1>
+        <p>SK Bukit Kuchai/SK Seafield 3</p>
+        <p>SMK USJ 8 (Business & Economic course)</p>
+        <p>UITM Segamat (Faculty of Information Management course)</p>
+        <p><a href="More info education.html" style="color: azure;">More info</a></p>
+    </div>
+    <hr>
+    <div>
+        <h1><div id="Work Experiences" style="color: blanchedalmond;">Work Experiences</h1>
+        <p>ST Rosyam Mart (Frozen department)</p>
+        <p>Lazada warehouse (Consolidation & Inventory)</p>
+        <p><a href="More info work.html" style="color: azure;">More info</a></p>
+    </div>
+    <hr>
+    <h1><div id="Work Experiences" style="color: blanchedalmond;">My Piano Performance</h1>
+    <video width="540" height="260" controls>
+        <source src="piano.MP4" type="video/MP4">
+    </video>
+    <hr>
+    <div>
+        <p><a href="Acknowledgement.html" style="color: #521212;"><div style="width: 150px; height: 18px; background-color: #f0f0f0; border: 2px solid #333; padding: 15px; text-align: center;">Acknowledgement</a></p>
+    </div>
+    <br>
+    <div>
+        <a href="website biodata.html"><font face="Lato" color="lighblue">Refresh</font></a>
+    </div>
+    <br>
+    <hr>
+    </center>
+
+    <footer>
+    <style>
+        .justified-text {
+          text-align: justify;
+          margin-left: 40px;
+          margin-right: 40px;
+          line-height: 1.0;
+        }
+    </style>
+<p class="justified-text"><font face="Lato" color="white" size="3">Written by Ariff Azri </font></p> 
+<p class="justified-text">©2023, Ariff Azri. All Right Reserved.</p>
+<p class="justified-text"><a href="https://www.instagram.com/ariffzri/?hl=en" style="color: plum;">Instagram</a></p>
+<p class="justified-text"><a href="https://twitter.com/YepAyep_" style="color: plum;">Twitter/X</a></p>
+<hr>
+    </footer>
+</html>
+    

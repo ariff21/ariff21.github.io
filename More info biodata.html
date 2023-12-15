@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- fade in effect -->
+<style>
+  /* Styling for fade-in effect */
+  .fade-in {
+      opacity: 0; 
+      animation: fadeInAnimation 1s ease-in forwards;
+  }
+
+  @keyframes fadeInAnimation {
+      from {
+          opacity: 0;
+      }
+      to {
+          opacity: 1;
+      }
+  }
+</style>
+<div class="fade-in">
+<head>
+    <title>Biodata details</title>
+</head>
+<style>
+    h2 {
+      color: bisque;
+      text-align: left;
+      display: block;
+      text-decoration: none;
+    }
+    /* css untuk navigation bar */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    /* css untuk background */
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      background-color: #521212; /* background colour untuk bar */
+      text-align: center;
+    }
+    /* ni yg bagi selari setiap button tu means dalam bentuk inline sebaris */
+    nav ul li {
+      display: inline-block;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 20px 40px; /* jarak button and ketinggian bar merah */
+      text-decoration: none; 
+      color: bisque;
+    }
+
+    /* Background color for navigation links on hover */
+    nav ul li a:hover {
+      background-color: rgb(0, 119, 128); 
+    }
+  </style>
+</head>
+<body>
+    <style>
+        /* link underline removed */
+        a {
+          text-decoration: none;
+        }
+        .justified-text {
+          text-align: justify;
+          margin-left: 40px;
+          margin-right: 40px;
+          line-height: 1.6;
+        }
+      </style>
+<!-- &nbsp tu jarak antara gallery dengan menu button -->
+<nav>
+    <ul>
+      <li><h2>Biodata</h2></li>  
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;<li><a href="index.html">Home</a></li>
+      <li><a href="More info birth.html">Birth</a></li>
+      <li><a href="More info education.html">Education History</a></li>
+      <li><a href="Gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+<body>
+  <p class="justified-text" style="background-color: aliceblue;"></p>
+    <p style="background-color: maroon;"><a href="index.html"><font color="bisque">Exit</font></a></p>
+    <h3><p class="justified-text">Background Color</p></h3>
+        <button class="justified-text" id="colorButton">Color preference</button>
+
+        <script>
+            const colorButton = document.getElementById('colorButton');
+            const colors = ["lightpink", "cyan", "lightblue", "bisque"];
+            function changeBackgroundColor() {
+                const randomIndex = Math.floor(Math.random() * colors.length);
+                const randomColor = colors[randomIndex];
+                document.body.style.backgroundColor = randomColor
+                
+            }
+            colorButton.addEventListener('click', changeBackgroundColor);
+        </script>
+        <center>
+    <h1><div id="Biodata">Biodata</h1>
+        
+        <img class="floating-image" src="Arip.jpg" width="200" height="275" border="2.5">
+
+        <script>
+          const images = document.querySelectorAll('.floating-image');
+          
+          images.forEach(image => {
+            image.addEventListener('mouseover', () => {
+              image.style.transform = 'scale(1.1)';
+            });
+          
+            image.addEventListener('mouseout', () => {
+              image.style.transform = 'scale(1)';
+            });
+          });
+          </script>
+    
+        <div>
+            <p><b>Name:</b> Ariff Azri bin Zaharrudin</p>
+            <p><b>Age:</b> 20 Years old</p>
+            <p><b>Gender:</b> Male</p>
+            <p><b>Contact:</b></p>
+            <p><a href="tel:+011 6082-5548">011 6082-5548</a></p>
+            <p><a href="mailto:ariffazri21@gmail.com">ariffazri21@gmail.com</a></p>
+            <p><b>Goals and aspirations:</b></p>
+            <p>I want to travel the world and experience 
+                different cultures.</p>
+            <p><b>Interest and hobbies:</b></p> 
+            <p>I like hearing to music especially alternative 
+                rock genre and I love to spend my leisure time to play instruments.</p>
+            <p><b>Type of person:</b> Ambivert and friendly.</p>
+            <p><b>Informal photo:</b></p>
+            <img src="informal photo.jpg" width="230" height="300" border="2">
+            <p><i>Took on Aidilfitri 2022</i></p>
+</body>
+
+<footer>
+  <style>
+    .justified-text {
+      text-align: justify;
+      margin-left: 40px;
+      margin-right: 40px;
+      line-height: 1.0;
+    }
+</style>
+<div style="background-color: maroon;"><hr>
+<p class="justified-text"><font face="Lato" color="dodgerblue" size="3">Written by Ariff Azri</p> 
+<p class="justified-text">©2023, Ariff Azri. All Right Reserved.</font></p>
+<p class="justified-text"><a href="https://www.instagram.com/ariffzri/?hl=en" style="color: plum;">Instagram</a></p>
+<p class="justified-text"><a href="https://twitter.com/YepAyep_" style="color: plum;">Twitter/X</a></p>
+<hr>
+</footer>
+</html>

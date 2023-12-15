@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Photos</title>
+    <!-- fade in effect -->
+    <style>
+      /* Styling for fade-in effect */
+      .fade-in {
+          opacity: 0; 
+          animation: fadeInAnimation 1s ease-in forwards;
+      }
+
+      @keyframes fadeInAnimation {
+          from {
+              opacity: 0;
+          }
+          to {
+              opacity: 1;
+          }
+      }
+  </style>
+  <div class="fade-in">
+</head>
+<head>
+    <style>
+        h2 {
+          color: bisque;
+          text-align: left;
+          display: block;
+          text-decoration: none;
+        }
+        /* css untuk navigation bar */
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+        }
+        /* css untuk background */
+        nav ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          background-color: #521212; /* background colour untuk bar */
+          text-align: center;
+        }
+        /* ni yg bagi selari setiap button tu means dalam bentuk inline sebaris */
+        nav ul li {
+          display: inline-block;
+        }
+    
+        nav ul li a {
+          display: block;
+          padding: 20px 40px; /* jarak button and ketinggian bar merah */
+          text-decoration: none; 
+          color: bisque;
+        }
+    
+        /* Background color for navigation links on hover */
+        nav ul li a:hover {
+          background-color: rgb(0, 119, 128);
+        }
+      </style>
+</head>
+<body>
+    <style>
+      /* link underline removed */
+      a {
+        text-decoration: none;
+      }
+    </style>
+      <!-- &nbsp tu jarak antara gallery dengan menu button -->
+      <nav>
+          <ul>
+            <li><h2>Gallery</h2></li>  
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;<li><a href="index.html">Home</a></li>
+            <li><a href="my photos.html">My photos</a></li>
+            <li><a href="family photos.html">Family photos</a></li>
+            <li><a href="https://www.google.com.my/">Close</a></li>
+          </ul>
+        </nav>
+
+<!-- back button -->
+<p style="background-color: maroon;"><a href="Gallery.html"><font color="bisque">Back</font></a></p>
+<!-- css for gallery -->
+<style>
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 10px;
+    padding: 10px;
+  }
+
+  .gallery-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+
+  .gallery-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  /* Hover effect */
+  .gallery-item:hover {
+    opacity: 0.7; /* Decrease opacity on hover */
+    transform: scale(1.1); /* Slightly increase size on hover */
+  }
+</style>
+
+<div class="gallery">
+  <div class="gallery-item">
+    <img src="raya.jpg">
+    <p>Eid Pic</p>
+  </div>
+  <div class="gallery-item">
+    <img src="eid pic 2.jpg">
+    <p>Eid Pic 2</p>
+  </div>
+  <div class="gallery-item">
+    <img src="NAM visit.jpg">
+    <p>National Archive of Malaysia visited Pic</p>
+  </div>  
+    <div class="gallery-item">
+    <img src="raya ppas.jpg">
+    <p>Eid Pic at PPAS Library</p>
+  </div>
+  <div class="gallery-item">
+    <img src="genting pic.jpg">
+    <p>Genting Pic</p>
+  </div>
+  <div class="gallery-item">
+    <img src="SULAM SISBOM Sem 3.jpg">
+    <p>SULAM SISBOM Semester 3 Pic</p>
+  </div>
+  <div class="gallery-item">
+    <img src="Event 314 Pic.jpg">
+    <p>Event 314 Pic</p>
+  </div>
+  <div class="gallery-item">
+    <img src="Pic with Iddin Ramli.jpg">
+    <p>Pic with Iddin Ramli</p>
+  </div>
+    <div class="gallery-item">
+    <img src="event 2.jpg">
+    <p>Event 314 Pic</p>
+  </div>
+  <div class="gallery-item">
+    <img src="NAM visit 2.jpg">
+    <img src="ppas studio.jpg"
+    <p>NAM and PPAS Studio visited Pic</p>
+  </div>
+
+</body>
+<hr>
+<footer>
+  <style>
+    .justified-text {
+      text-align: justify;
+      margin-left: 40px;
+      margin-right: 40px;
+      line-height: 1.0;
+    }
+</style>
+<div style="background-color: maroon;"><hr>
+<p class="justified-text"><font face="Lato" color="dodgerblue" size="3">Written by Ariff Azri </p> 
+<p class="justified-text">©2023, Ariff Azri. All Right Reserved.</font></p>
+<p class="justified-text"><a href="https://www.instagram.com/ariffzri/?hl=en" style="color: plum;">Instagram</a></p>
+<p class="justified-text"><a href="https://twitter.com/YepAyep_" style="color: plum;">Twitter/X</a></p>
+<hr>
+</footer>
+</html>

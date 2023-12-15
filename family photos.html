@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Photos</title>
+    <!-- fade in effect -->
+    <style>
+      /* Styling for fade-in effect */
+      .fade-in {
+          opacity: 0; 
+          animation: fadeInAnimation 1s ease-in forwards;
+      }
+
+      @keyframes fadeInAnimation {
+          from {
+              opacity: 0;
+          }
+          to {
+              opacity: 1;
+          }
+      }
+  </style>
+  <div class="fade-in">
+</head>
+<body>
+  <div style="background-color: aliceblue;">
+    <style>
+        h2 {
+          color: bisque;
+          text-align: left;
+          display: block;
+          text-decoration: none;
+        }
+        /* css untuk navigation bar */
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+        }
+        /* css untuk background */
+        nav ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          background-color: #521212; /* background colour untuk bar */
+          text-align: center;
+        }
+        /* ni yg bagi selari setiap button tu means dalam bentuk inline sebaris */
+        nav ul li {
+          display: inline-block;
+        }
+    
+        nav ul li a {
+          display: block;
+          padding: 20px 40px; /* jarak button and ketinggian bar merah */
+          text-decoration: none; 
+          color: bisque;
+        }
+    
+        /* Background color for navigation links on hover */
+        nav ul li a:hover {
+          background-color: rgb(0, 119, 128);
+        }
+      </style>
+      <style>
+        /* link underline removed */
+        a {
+          text-decoration: none;
+        }
+      </style>
+        <!-- &nbsp tu jarak antara gallery dengan menu button -->
+        <nav>
+            <ul>
+              <li><h2>Gallery</h2></li>  
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;<li><a href="index.html">Home</a></li>
+              <li><a href="my photos.html">My photos</a></li>
+              <li><a href="#">Family photos</a></li>
+              <li><a href="https://www.google.com.my/">Close</a></li>
+            </ul>
+          </nav>
+          <!-- back button -->
+<p style="background-color: maroon;"><a href="Gallery.html"><font color="bisque">Back</font></a></p>
+
+<style>
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+
+  .gallery img {
+    max-width: 300px;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+  }
+</style>
+</head>
+<body>
+
+<div class="gallery">
+<img class="floating-image" src="fam 1.jpg" alt="Family 1">
+<img class="floating-image" src="fam 2.jpg" alt="Family 2">
+<img class="floating-image" src="fam 3.jpg" alt="Family 3">
+<img class="floating-image" src="fam 4.jpg" alt="Family 4">
+</div>
+
+<script>
+const images = document.querySelectorAll('.floating-image');
+
+images.forEach(image => {
+  image.addEventListener('mouseover', () => {
+    image.style.transform = 'scale(1.1)';
+  });
+
+  image.addEventListener('mouseout', () => {
+    image.style.transform = 'scale(1)';
+  });
+});
+</script>
+
+</body>
+<footer>
+  <style>
+    .justified-text {
+      text-align: justify;
+      margin-left: 40px;
+      margin-right: 40px;
+      line-height: 1.0;
+    }
+</style>
+<p class="justified-text"><font face="Lato" color="dodgerblue" size="3">Written by Ariff Azri </p> 
+<p class="justified-text">©2023, Ariff Azri. All Right Reserved.</font></p>
+<p class="justified-text"><a href="https://www.instagram.com/ariffzri/?hl=en" style="color: plum;">Instagram</a></p>
+<p class="justified-text"><a href="https://twitter.com/YepAyep_" style="color: plum;">Twitter/X</a></p>
+<hr>
+</footer>
+</html>

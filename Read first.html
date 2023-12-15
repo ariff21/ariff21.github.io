@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <!-- fade in effect -->
+    <style>
+        /* Styling for fade-in effect */
+        .fade-in {
+            opacity: 0; 
+            animation: fadeInAnimation 1s ease-in forwards;
+        }
+
+        @keyframes fadeInAnimation {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+    <div class="fade-in">
+</head>
+</html>
+<body>
+    <style>
+        /* link underline removed */
+        a {
+          text-decoration: none;
+        }
+      </style>
+    <div>
+        <p style="background-color: maroon;"><a href="index.html"><font color="bisque">Back</font></a></p>
+    </div>
+    <div style="background-color: aliceblue;">
+    <h2>About Me</h2>
+        <style>
+            .justified-text {
+          text-align: justify;
+          margin-left: 40px;
+          margin-right: 40px;
+          line-height: 1.6;
+        }
+        </style>
+        <p class="justified-text"> Hi, I'm Ariff Azri, I lived in Subang Jaya, Selangor. I was born in 21 march 2003 at Hospital Putrajaya. I have four siblings including me. My father is a businessman who sells furniture through online website with his own business name and my mother is a housewife. I have a brother who still studying in Mechanical Engineering course and in his internship semester now. Alongside, I have two little sisters who are still in middle school and primary school. My hobbies are playing instruments such as guitar, piano, and digital instruments on my smartphone. I also likes to playing games especially racing and shooting games. For my favourite sports, i did like to play volleyball and badminton for now. As you read this, I am still studying in UITM segamat, I took Diploma of Information Management. For now, I am still on my 5th semester which my last sem. I have planned to continue my study which is Degree in Information Science (Information Management System). I have found out that I have interest in this course and do like to know more about programming and system. That's all for my preface. 
+        </p>
+        <script>
+            alert("This is about me");
+        </script>
+
+<h3>My favourite colours</h3>
+        <button id="colorButton">Change</button>
+
+        <script>
+            const colorButton = document.getElementById('colorButton');
+            const colors = ["black", "cyan", "lightblue", "bisque"];
+            function changeBackgroundColor() {
+                const randomIndex = Math.floor(Math.random() * colors.length);
+                const randomColor = colors[randomIndex];
+                document.body.style.backgroundColor = randomColor
+                
+            }
+            colorButton.addEventListener('click', changeBackgroundColor);
+        </script>
+
+<h3>Sky pics:</h3>
+
+<style>
+    /* css for the slider */
+    .slider {
+        max-width: 500px;
+        max-height: 500px;
+        position: relative;
+        margin: auto;
+        overflow: hidden;
+        border: 1px solid #ccc;
+    }
+
+    .slides {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .slide {
+        min-width: 100%;
+    }
+
+    .slide img {
+            width: 100%; 
+            height: auto;
+    }
+</style>
+
+<div class="slider">
+    <div class="slides">
+        <div class="slide"><img src="sky 1.jpg" alt="Image 1"></div>
+        <div class="slide"><img src="sky 2.jpg" alt="Image 2"></div>
+        <div class="slide"><img src="sky 3.jpg" alt="Image 3"></div>
+        <div class="slide"><img src="sky 4.jpg" alt="Image 4"></div>
+        <div class="slide"><img src="sky 6.jpg" alt="Image 6"></div>
+        <div class="slide"><img src="sky 7.jpg" alt="Image 7"></div>
+        <div class="slide"><img src="sky 8.jpg" alt="Image 8"></div>
+        <div class="slide"><img src="sky 9.jpg" alt="Image 9"></div>
+        <div class="slide"><img src="sky 10.jpg" alt="Image 10"></div>
+        <div class="slide"><img src="sky 11.jpg" alt="Image 11"></div>
+    </div>
+</div>
+
+<script>
+    // js for auto-sliding
+    const slider = document.querySelector('.slider');
+    const slides = document.querySelectorAll('.slide');
+    let currentIndex = 0;
+
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        const translateValue = -currentIndex * 100 + '%';
+        slider.querySelector('.slides').style.transform = `translateX(${translateValue})`;
+    }
+
+    setInterval(nextSlide, 3000); // Change slide every 3 seconds
+</script>
+
+<br>
+
+</body>
+<footer>
+    <style>
+        .justified-text {
+          text-align: justify;
+          margin-left: 40px;
+          margin-right: 40px;
+          line-height: 1.5;
+        }
+    </style>
+    <div style="background-color: maroon;"><hr>
+<p class="justified-text"><font face="Lato" color="dodgerblue" size="3">Written by Ariff Azri </p> 
+<p class="justified-text">©2023, Ariff Azri. All Right Reserved.</font></p>
+<p class="justified-text"><a href="https://www.instagram.com/ariffzri/?hl=en" style="color: plum;">Instagram</a></p>
+<p class="justified-text"><a href="https://twitter.com/YepAyep_" style="color: plum;">Twitter/X</a></p>
+<hr>
+</footer>
+</html>
